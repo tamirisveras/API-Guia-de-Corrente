@@ -16,7 +16,7 @@ class Hosting(models.Model):
 
     name = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.ImageField(upload_to='hospedagem/images')
+    image = models.ImageField(upload_to='tourist/images')
     location = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -30,7 +30,7 @@ class Gastronomic(models.Model):
 
     name = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.ImageField(upload_to='restaurante/images')
+    image = models.ImageField(upload_to='tourist/images')
     location = models.CharField(max_length=50)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True)
